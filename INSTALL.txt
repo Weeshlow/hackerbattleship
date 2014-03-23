@@ -1,0 +1,57 @@
+==========================================
+DATABASE SETUP
+==========================================
+1) create the database owner account:
+* sudo -u postgres createuser -lDERPS ctf
+  - the app doesn't use this, but you will
+    need it to create the database properly
+  - pick a strong password for this
+
+2) create the read-only and read-write
+   database accounts:
+* sudo -u postgres createuser -lDERPS ctf_ro
+* sudo -u postgres createuser -lDERPS ctf_rw
+  - you will be prompted to set a password.
+  - the web app is configured for a default password of 'ctf'
+  - please pick a better one
+  - update web/inc/db.inc.php with whatever you picked)
+
+3) create the database & assign it to the ctf
+   database owner account from step 1
+* sudo -u postgres createdb -O ctf ctf
+
+4) populate the database tables and sample data
+* psql -U ctf -h localhost -f db.sql ctf
+
+==========================================
+WEB APP SETUP
+==========================================
+* Set the web/htdocs directory as the document root
+----------------------------------------------------
+Example Apache Configuration:
+<VirtualHost *:80>
+  ServerAdmin webmaster@ctf
+  ServerName  ctf.domain
+
+  DocumentRoot /home/ctf/web/htdocs
+
+  <Directory />
+    Options None
+    AllowOverride None
+    Order allow,deny
+    allow from all
+  </Directory>
+
+  <Directory /home/ctf/web/htdocs/>
+    Options None
+    AllowOverride None
+    Order allow,deny
+    allow from all
+  </Directory>
+
+  ErrorLog ${APACHE_LOG_DIR}/ctf_error.log
+  LogLevel warn
+  CustomLog ${APACHE_LOG_DIR}/ctf_access.log combined
+</VirtualHost>
+----------------------------------------------------
+
