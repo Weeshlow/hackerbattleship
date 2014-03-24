@@ -66,7 +66,7 @@ END;
           if($id_rslt) {
             $team_id =  pg_fetch_row($id_rslt)[0];
             $_SESSION['u'] = $team_id;
-            $_SESSION['team'] =  htmlspecialchars($name);
+            $_SESSION['team'] =  htmlspecialchars($name, ENT_QUOTES);
           } else {
             $arr[] = array("err" => "id query failed" . pg_last_error($db_handle));
             echo json_encode($arr);
