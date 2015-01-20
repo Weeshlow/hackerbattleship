@@ -7,5 +7,5 @@ that, you may need to copy them to different locations on your host.
 
 ## Example installation process:
 
-`cp init/hackerbattleship.conf /etc/init/
-cp -R nginx* /etc/nginx/`
+`cp init/hackerbattleship.conf /etc/init/`
+`cp -R nginx* /etc/nginx/`
