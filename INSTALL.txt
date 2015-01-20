@@ -41,7 +41,9 @@ WEB APP SETUP
    - the default web root is /data/web/hackerbattleship
 4) Copy the web application files to the web root
    - cp -r web/* /data/web/hackerbattleship
-5) Restart nginx, and start the node.js instance
+5) cd web
+6) npm install
+7) Restart nginx, and start the node.js instance
    - service nginx start
    - start hackerbattleship
 
