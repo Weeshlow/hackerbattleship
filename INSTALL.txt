@@ -41,8 +41,11 @@ WEB APP SETUP
    - the default web root is /data/web/hackerbattleship
 4) Copy the web application files to the web root
    - cp -r web/* /data/web/hackerbattleship
-4) Restart nginx, and start the node.js instance
+5) Restart nginx, and start the node.js instance
    - service nginx start
    - start hackerbattleship
+
+NOTE: the default installation has the node.js application running on port 9001
+with nginx proxying requests to it.
 ----------------------------------------------------
 
