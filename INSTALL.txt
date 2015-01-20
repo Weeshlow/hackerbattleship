@@ -1,6 +1,7 @@
 ==========================================
 DATABASE SETUP
 ==========================================
+PostgreSQL:
 1) create the database owner account:
 * sudo -u postgres createuser -lDERPS ctf
   - the app doesn't use this, but you will
@@ -26,32 +27,19 @@ DATABASE SETUP
 ==========================================
 WEB APP SETUP
 ==========================================
-* Set the web/htdocs directory as the document root
-----------------------------------------------------
-Example Apache Configuration:
-<VirtualHost *:80>
-  ServerAdmin webmaster@ctf
-  ServerName  ctf.domain
-
-  DocumentRoot /home/ctf/web/htdocs
-
-  <Directory />
-    Options None
-    AllowOverride None
-    Order allow,deny
-    allow from all
-  </Directory>
-
-  <Directory /home/ctf/web/htdocs/>
-    Options None
-    AllowOverride None
-    Order allow,deny
-    allow from all
-  </Directory>
-
-  ErrorLog ${APACHE_LOG_DIR}/ctf_error.log
-  LogLevel warn
-  CustomLog ${APACHE_LOG_DIR}/ctf_access.log combined
-</VirtualHost>
+1) Install node.js
+   - wget http://nodejs.org/dist/latest/<filename>
+     (example: http://nodejs.org/dist/latest/node-v0.10.35.tar.gz)
+   - tar zxvf node-v0.10.35.tar.gz
+   - cd node-v0.10.35
+   - ./configure --prefix=/opt
+   - make
+   - sudo make install
+   - OPTIONAL: add the path to your env: echo "PATH=/opt/node/bin:$PATH" >>~/.bashrc
+2) Install nginx (sudo apt-get install nginx)
+3) Copy the system configs from etc/* to /etc on the server
+4) Restart nginx, and start the node.js instance
+   - service nginx start
+   - start hackerbattleship
 ----------------------------------------------------
 
