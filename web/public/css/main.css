@@ -1,0 +1,81 @@
+/* ----------------------------------------------------
+// html elements
+// --------------------------------------------------*/
+html {
+  background: url(/img/frosted.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  color: #FFFFFF;
+  font-size: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+legend {
+  font-style: italic;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #4EA6EA;
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+  color: #900021;
+}
+
+input[type=text] {
+  background-color: inherit;
+  height: 17px;
+  border: 0;
+  margin: 5px;
+  padding: 3px;
+  box-shadow: 0 2px 0 0 #BBBBBB, 0 2px 0 0 #BBBBBB;
+  -webkit-transition: box-shadow 0.3s;
+  -ms-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+}
+
+input[type=text]:focus {
+  background-color: #EEEEEE;
+  outline: none;
+  margin: 5px;
+  padding: 3px;
+  box-shadow: 0 2px 0 0 #333333, 0 2px 0 0 #333333;
+}
+
+input[type=submit] {
+  background-color: #4EA6EA;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: small;
+  padding: 0 5px 0 5px;
+  margin: 5px;
+  float: right;
+  border-radius: 20px;
+}
+
+input[type=submit]:hover {
+  background-color: #900021;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: small;
+  padding: 0 5px 0 5px;
+  margin: 5px;
+  float: right;
+  border-radius: 20px;
+}
+
+/* ----------------------------------------------------
+// custom identifiers
+// --------------------------------------------------*/
+
+
+/* ----------------------------------------------------
+// classes
+// --------------------------------------------------*/

@@ -9,10 +9,10 @@ describe('Requests to the app root', function() {
       .expect(200, done);
   });
 
-  it('Should return JSON format', function(done) {
+  it('Should return HTML format', function(done) {
     request(app)
       .get('/')
-      .expect('Content-Type', /json/, done);
+      .expect('Content-Type', /html/, done);
   });
 
 });
