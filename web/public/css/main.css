@@ -75,6 +75,7 @@ input[type=submit]:hover {
 }
 
 nav {
+  clear: left;
   margin-top: 10px;
 }
 
