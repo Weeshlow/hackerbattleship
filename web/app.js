@@ -9,4 +9,8 @@ app.disable('x-powered-by');
 var users = require('./routes/users');
 app.use('/users', users);
 
+// include the /api routing
+var api = require('./routes/api');
+app.use('/api', api);
+
 module.exports = app;
