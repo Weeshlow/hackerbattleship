@@ -1,7 +1,13 @@
 # Hacker Battleship - A CTF Engine
 Copyright 2013 - 2015, Jason Ross <algorythm@gmail.com>
 
-## Currently being ported from PHP to Node.js
+This is the hacker battleship CTF engine that's used by <a
+href="http://bsidesroc.com">BSidesROC</a>.
+
+## Status: Currently being ported from PHP to Node.js
+
+I didn't think to make a branch for the rewrite, and instead blew away the PHP
+version. oops.
 
 ![mockup of the main screen](doc/img/mockup.png "mockup of the main screen")
 
