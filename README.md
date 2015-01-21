@@ -7,10 +7,11 @@ href="http://bsidesroc.com">BSidesROC</a>.
 *Screenshot:*
 ![mockup of the main screen](doc/img/mockup.png "mockup of the main screen")
 
-## Status: Currently being ported from PHP to Node.js
-I didn't think to make a branch for the rewrite, and instead blew away the PHP
-version. oops.
+## Status
+Currently being ported from PHP to Node.js. Sadly, I didn't think to make a
+branch for the rewrite, and instead blew away the PHP version. oops.
 
+## Description
 * “The House” has a 7×7 battleship grid laid out
 
 * Each coordinate on the grid is tied to a hacking challenge.
