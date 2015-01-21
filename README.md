@@ -3,6 +3,8 @@ Copyright 2013 - 2015, Jason Ross <algorythm@gmail.com>
 
 ## Currently being ported from PHP to Node.js
 
+![mockup of the main screen](doc/img/mockup.png "mockup of the main screen")
+
 * “The House” has a 7×7 battleship grid laid out
 
 * Each coordinate on the grid is tied to a hacking challenge.
