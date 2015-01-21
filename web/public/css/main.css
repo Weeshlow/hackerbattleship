@@ -11,7 +11,7 @@ html {
 
 body {
   color: #000000;
-  font-size: 100%;
+  font-size: 1.5em;
   font-family: 'Titillium Web', sans-serif;
 }
 
@@ -91,18 +91,21 @@ nav {
   width: 300px;
   height: 200px;
   border: none;
+  margin: 5px;
 }
 
 #leftbar {
   float: left;
   width: 320px;
   min-height: 100%;
-  border-right: 3px solid #000000;
+  margin: 5px;
+/*  border-right: 3px solid #000000;*/
 }
 
 #loginform {
   float: right;
   border: 1px solid #000000;
+  margin: 5px;
 }
 
 #content {
@@ -110,7 +113,70 @@ nav {
   margin: auto;
 }
 
-
 /* ----------------------------------------------------
 // classes
 // --------------------------------------------------*/
+.topic {
+  margin-left: 5px;
+  font-size: 175%;
+}
+
+.container {
+  clear: both;
+  width: 80%;
+  margin: auto;
+  border: 3px solid #000000;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.board ul {
+  margin-bottom: 0.4em;
+  display: block;
+  width: 100%;
+}
+
+.board li {
+  margin: 0 1%;
+  display: inline-block;
+  width: 5%;
+  text-align: center;
+}
+
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten {
+  float: left;
+  display: block;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.wide { width: 100%; }
+.tall { height: 100%; }
+
+.one { width: 8%;  }
+.two { width: 18%; }
+.three { width: 28%; }
+.four { width: 38%; }
+.five { width: 48%; }
+.six { width: 58%; }
+.seven { width: 68%; }
+.eight { width: 78%; }
+.nine { width: 88%; }
+.ten { width: 98%; }
+
+.first { margin-left: 0; }
+.last { margin-right: 0; }
+
+.off-one { margin-left: 11%;  }
+.off-two { margin-left: 21%; }
+.off-three { margin-left: 31%; }
+.off-four { margin-left: 41%; }
+.off-five { margin-left: 51%; }
+.off-six { margin-left: 61%; }
+.off-seven { margin-left: 71%; }
+.off-eight { margin-left: 81%; }
+.off-nine { margin-left: 91%; }
+
+.icon-droplet { color: #00008B; }
+.icon-fire { color: #8B0000; }
+
