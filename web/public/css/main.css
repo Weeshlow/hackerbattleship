@@ -24,12 +24,12 @@ legend {
 
 a:link, a:visited {
   text-decoration: none;
-  color: #4EA6EA;
+  color: #900021;
 }
 
 a:hover, a:active {
   text-decoration: underline;
-  color: #900021;
+  color: #303030;
 }
 
 input[type=text], input[type=password] {
@@ -38,9 +38,9 @@ input[type=text], input[type=password] {
   border: 0;
   margin: 5px;
   padding: 3px;
-  box-shadow: 0 2px 0 0 #BBBBBB, 0 2px 0 0 #BBBBBB;
   -webkit-transition: box-shadow 0.3s;
   -ms-transition: box-shadow 0.3s;
+  box-shadow: 0 2px 0 0 #FFFFFF, 0 2px 0 0 #FFFFFF;
   transition: box-shadow 0.3s;
 }
 
@@ -50,22 +50,26 @@ input[type=text]:focus, input[type=password]:focus {
   outline: none;
   margin: 5px;
   padding: 3px;
-  box-shadow: 0 2px 0 0 #333333, 0 2px 0 0 #333333;
+  -webkit-transition: box-shadow 0.3s;
+  -ms-transition: box-shadow 0.3s;
+  box-shadow: 0 2px 0 0 #900021, 0 2px 0 0 #900021;
+  transition: box-shadow 0.3s;
 }
 
 input[type=submit] {
-  background-color: #333333;
+  background-color: #900021;
   color: #FFFFFF;
   font-weight: bold;
   font-size: small;
   padding: 0 5px 0 5px;
   margin: 5px;
+  float: right;
   border-radius: 20px;
 }
 
 input[type=submit]:hover {
-  background-color: #900021;
-  color: #FFFFFF;
+  background-color: #FFFFFF;
+  color: #900021;
   font-weight: bold;
   font-size: small;
   padding: 0 5px 0 5px;
