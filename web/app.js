@@ -9,8 +9,9 @@ app.disable('x-powered-by');
 var users = require('./routes/users');
 app.use('/users', users);
 
+// thinking /api is just redundant...
 // include the /api routing
-var api = require('./routes/api');
-app.use('/api', api);
+//var api = require('./routes/api');
+//app.use('/api', api);
 
 module.exports = app;

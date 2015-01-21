@@ -14,6 +14,12 @@ describe('Requests to the app root', function() {
       .get('/')
       .expect('Content-Type', /html/, done);
   });
+
+  it('Should return an index file with hacker battleship in it', function(done) {
+    request(app)
+      .get('/')
+      .expect(/hacker battleship/i, done);
+  });
 });
 
 describe('Requests to /rules.html', function() {
@@ -30,7 +36,7 @@ describe('Requests to /rules.html', function() {
   });
 });
 
-describe('Requests to /api/grid', function() {
+describe('Requests to /grid', function() {
   it('Should return status code 200', function(done) {
     request(app)
       .get('/api/grid')
