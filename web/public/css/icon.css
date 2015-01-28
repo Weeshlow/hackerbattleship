@@ -1,107 +1,34 @@
 @font-face {
-	font-family: 'icomoon';
-	src:url('../font/icomoon.eot');
-	src:url('../font/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('../font/icomoon.woff') format('woff'),
-		url('../font/icomoon.ttf') format('truetype'),
-		url('../font/icomoon.svg#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+        font-family: 'icomoon';
+        src:url('/fonts/icomoon.eot?-7fgxvm');
+        src:url('/fonts/icomoon.eot?#iefix-7fgxvm') format('embedded-opentype'),
+                url('/fonts/icomoon.woff?-7fgxvm') format('woff'),
+                url('/fonts/icomoon.ttf?-7fgxvm') format('truetype'),
+                url('/fonts/icomoon.svg?-7fgxvm#icomoon') format('svg');
+        font-weight: normal;
+        font-style: normal;
 }
 
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
-[data-icon]:before {
-	font-family: 'icomoon';
-	content: attr(data-icon);
-	speak: none;
-	font-weight: normal;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
+[class^="icon-"], [class*=" icon-"] {
+        font-family: 'icomoon';
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
 }
 
-/* Use the following CSS code if you want to have a class per icon */
-/*
-Instead of a list of all class selectors,
-you can use the generic selector below, but it's slower:
-[class*="icon-"]:before {
-*/
-.icon-fire:before, .icon-rocket:before, .icon-twitter:before, .icon-twitter-2:before, .icon-twitter-3:before, .icon-warning:before, .icon-clock:before, .icon-clock-2:before, .icon-play:before, .icon-pause:before, .icon-record:before, .icon-stop:before, .icon-next:before, .icon-previous:before, .icon-first:before, .icon-last:before, .icon-target:before, .icon-droplet:before, .icon-cross:before, .icon-droplet-2:before, .icon-broadcast:before, .icon-cancel:before, .icon-target-2:before, .icon-target-3:before {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-}
-.icon-fire:before {
-	content: "\e010";
-}
-.icon-rocket:before {
-	content: "\e018";
-}
-.icon-twitter:before {
-	content: "\e012";
-}
-.icon-twitter-2:before {
-	content: "\e005";
-}
-.icon-twitter-3:before {
-	content: "\e000";
-}
-.icon-warning:before {
-	content: "\e001";
-}
-.icon-clock:before {
-	content: "\e002";
-}
-.icon-clock-2:before {
-	content: "\e003";
-}
-.icon-play:before {
-	content: "\e004";
-}
-.icon-pause:before {
-	content: "\e006";
-}
-.icon-record:before {
-	content: "\e007";
-}
-.icon-stop:before {
-	content: "\e008";
-}
-.icon-next:before {
-	content: "\e009";
-}
-.icon-previous:before {
-	content: "\e00a";
-}
-.icon-first:before {
-	content: "\e00b";
-}
-.icon-last:before {
-	content: "\e00c";
-}
-.icon-target:before {
-	content: "\e00d";
-}
 .icon-droplet:before {
-	content: "\e00e";
+	content: "\e025";
+  color: #00008B;
 }
-.icon-cross:before {
-	content: "\e00f";
-}
-.icon-droplet-2:before {
-	content: "\e011";
-}
-.icon-broadcast:before {
-	content: "\e013";
-}
-.icon-cancel:before {
-	content: "\e014";
-}
-.icon-target-2:before {
-	content: "\e015";
-}
-.icon-target-3:before {
-	content: "\e016";
+
+.icon-fire:before {
+  content: "\e23f";
+  color: #8B0000;
 }
