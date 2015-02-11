@@ -1,31 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:600'
-  rel='stylesheet' type='text/css'>
+  <link href='/css/reset.css' rel='stylesheet' type='text/css'>
   <link href='/css/main.css' rel='stylesheet' type='text/css'>
   <link href='/css/icon.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <form id="loginform">
-    <legend>Login</legend>
-    <input type="text" name="user">
-    <input type="password" name="pass">
-    <input type="submit" value="login">
-  </form>
+
+  <div id="statspanel">
+    <form id="loginform">
+      <legend>Login</legend>
+      <input type="text" name="user">
+      <input type="password" name="pass">
+     <input type="submit" value="login">
+    </form>
+  </div>
+
+  <nav>
+    &nbsp;|&nbsp;
+    <a href="/">home</a>
+    &nbsp;|&nbsp;
+    <a href="/register">register</a>
+    &nbsp;|&nbsp;
+    <a href="/rules">rules</a>
+    &nbsp;|&nbsp;
+  </nav>
+
+  <img id="logo" src="/img/battleship.png" width="500" height="200">
+
   <div id="leftbar">
-    <img id="logo" src="/img/battleship.png" width="500" height="200">
-    <nav>
-      <ul>
-        <li><a href="/">home</a></li>
-        <li><a href="#">register</a></li>
-          <li><a href="/rules.html">rules</a></li>
-      </ul>
-    </nav>
+    <h1 class="topic">rules</h1>
   </div>
+
   <div id="content">
-    <h1>rules</h1>
-      <p>These are the rules:</p>
+    <h1>These are the rules:</h1>
+    <ul>
+      <li>"The House" has a 7×7 battleship grid laid out</li>
+      <li>Each coordinate on the grid is tied to a hacking challenge</li>
+      <li>All of the teams work to sink all of The House's ships</li>
+      <ul>
+      <li>When a challenge is solved, the corresponding coordinate is revealed as
+      either a hit or a miss</li>
+      <li>Additionally, the challenge closes, making it unavailable for other teams to
+    solve</li>
+      </ul>
+    </ul>
+
+    <h2>Points are awarded thus:</h2>
+    <ul>
+      <li>Solving a challenge: points based on challenge worth</li>
+      <li>Hitting a ship: 5 points</li>
+      <li>Sinking a ship: 10 points</li>
+      <li>In addition to the grid challenges, the game supports bonus challenges which
+    are independent of the grid.</li>
+      <li>These are worth 10 points each.</li>
+      <li>Unlike the grid challenges, bonus challenges do not close when solved
+    (though each team can solve them only once).</li>
+    </ul>
   </div>
+
+  <script src="/scripts/jquery.js" type="text/javascript"></script>
+  <script src="/scripts/hackerbattleship.js" type="text/javascript"></script>
+
 </body>
 </html>

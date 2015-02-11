@@ -1,17 +1,18 @@
 var express = require('express');
+//var path = require('path');
 var app = express()
 
 //app.use(express.static('public'));
 app.use(express.static(__dirname + '/public'));
 app.disable('x-powered-by');
 
-// include the /users routing
-var users = require('./routes/users');
-app.use('/users', users);
+// include the /user routing
+var user = require('./routes/user');
+app.use('/user', user);
 
-// thinking /api is just redundant...
-// include the /api routing
-//var api = require('./routes/api');
-//app.use('/api', api);
+// serve content from the root
+app.get('/rules', function(reqest, response) {
+  response.sendFile('/rules.html', {'root': __dirname + '/public'} );
+});
 
 module.exports = app;
